@@ -185,7 +185,7 @@ public class MaterialDialog extends DialogBase implements View.OnClickListener, 
                     listType = ListType.SINGLE;
                 } else if (listCallbackMulti != null) {
                     listType = ListType.MULTI;
-                    selectedIndicesList = new ArrayList<>(Arrays.asList(selectedIndices));
+                    selectedIndicesList = new ArrayList<Integer>(Arrays.asList(selectedIndices));
                 } else {
                     listType = ListType.REGULAR;
                 }
