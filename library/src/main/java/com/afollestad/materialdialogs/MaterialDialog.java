@@ -502,6 +502,7 @@ public class MaterialDialog extends DialogBase implements View.OnClickListener, 
         neutralButton = (TextView) view.findViewById(
                 isStacked ? R.id.buttonStackedNeutral : R.id.buttonDefaultNeutral);
         if (this.neutralText != null) {
+            positiveButton.setVisibility(View.GONE);
             setTypeface(neutralButton, mediumFont);
             neutralButton.setVisibility(View.VISIBLE);
             neutralButton.setTextColor(getActionTextStateList(this.neutralColor));
