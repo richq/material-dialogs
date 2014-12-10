@@ -679,18 +679,9 @@ public class MaterialDialog extends DialogBase implements View.OnClickListener, 
                     a.recycle();
                 }
             } else {
-                TypedArray a = context.getTheme().obtainStyledAttributes(new int[]{R.attr.colorAccent});
-                try {
-                    this.positiveColor = a.getColor(0, materialBlue);
-                    this.negativeColor = a.getColor(0, materialBlue);
-                    this.neutralColor = a.getColor(0, materialBlue);
-                } catch (Exception e) {
-                    this.positiveColor = materialBlue;
-                    this.negativeColor = materialBlue;
-                    this.neutralColor = materialBlue;
-                } finally {
-                    a.recycle();
-                }
+                this.positiveColor = materialBlue;
+                this.negativeColor = materialBlue;
+                this.neutralColor = materialBlue;
             }
         }
 
